@@ -21,8 +21,8 @@ public class TransformData {
 	
 	public void transform() {
 		try {
-			CSVReader reader = new CSVReader(new FileReader("/home/samanthasanders/Documents/Datasets/Z11121314.csv"));
-			FileWriter writer = new FileWriter("/home/samanthasanders/Documents/Datasets/TransformedZebra.csv");
+			CSVReader reader = new CSVReader(new FileReader(InputFileName));
+			FileWriter writer = new FileWriter(OutputFileNmae);
 			
 			String[] nextLine;
 			nextLine = reader.readNext(); // this is the column header line
